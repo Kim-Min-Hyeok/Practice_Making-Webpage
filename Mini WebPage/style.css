@@ -1,0 +1,78 @@
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/room.jpg); 
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin:0 auto;
+    display: flex; /*아이템 정렬*/
+    justify-content: space-between; /*좌우 끝 정렬*/
+    align-items: center; /*텍스트 해당영역 중앙위치(위 아래)*/
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.container .nav ul li{
+    display: inline-block; /*가로로 보이게 설정*/
+    margin: 0 10px; /*li사이에 간격설정*/
+}
+
+.container .nav ul li a{
+   text-decoration: none; /*a태그의 텍스트 데코레이션 제거*/
+   color: white;
+} 
+
+.container .nav ul li a:hover{
+    color: #1fdfdf;
+}
+
+.container .hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%); /*위의 4줄 코드는 텍스트를 해당영역 중앙에 위치하게 해줌*/
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero p{
+    font-size: 22px;
+}
+
+.container .hero button{
+    background: none;
+    border:2px solid darkseagreen;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
